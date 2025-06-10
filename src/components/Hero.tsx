@@ -60,7 +60,7 @@ const Hero = () => {
           
           <div className="lg:w-1/2 relative">
             <div 
-              className="w-full h-96 rounded-xl border border-indigo-100 bg-white shadow-xl p-8 relative"
+              className="w-full h-100 rounded-xl border border-indigo-100 bg-white shadow-xl p-8 relative"
               style={{ 
                 transform: `translateY(${scrollY * 0.05}px)`,
                 transition: "transform 0.1s ease-out" 
@@ -163,8 +163,8 @@ const Hero = () => {
       </div>
       
       {/* Add CSS keyframes for the floating animation */}
-      <style jsx>{`
-        @keyframes float {
+      <style>{`
+      @keyframes float {
           0%, 100% {
             transform: translateY(0) translateX(0);
           }
